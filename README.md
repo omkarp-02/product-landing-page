@@ -1,3 +1,3 @@
-# product-landing-page
+You can find this project at the following link:
 
-view page:
+### [Product Landing Page](https://omkarp-02.github.io/product-landing-page/)
