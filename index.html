@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://use.fontawesome.com/7748c1b29f.js"></script>
+
+    <div class="main">
+        <header id="header">
+            <img src="https://previews.123rf.com/images/carlanichiata/carlanichiata1711/carlanichiata171100079/89173400-chitarra-logo-icona-vettoriale-stilizzato-stile-semplice-ed-elegante-.jpg" alt="logo" id="header-img">
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a href="#features" class="nav-link">Features</a></li>
+                        <li><a href="#how-it-works" class="nav-link">How it works</a></li>
+                        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <div class="container sub">
+            <h2>Top Quality Guitars</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input name="email" type="email" id="email" placeholder="Enter your email address">
+
+                <input type="submit" id="submit" value="Get Started" class="btn">
+            </form>
+        </div>
+
+        <section id="features" class="container">
+            <div class="featured-wrapper">
+                <div class="featured-icon">
+                    <i class="fa fa-fire"></i>
+                </div>
+                <div class="featured-text">
+                    <h3>Premium Materials</h3>
+                    <p>Our trombones use the best materials which is sourced locally. This will increase the longevity of your purchase.
+                    </p>
+                </div>
+            </div>
+
+            <div class="featured-wrapper">
+                <div class="featured-icon">
+                    <i class="fa fa-truck"></i>
+                </div>
+                <div class="featured-text">
+                    <h3>Fast Shipping</h3>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+                    </p>
+                </div>
+            </div>
+
+            <div class="featured-wrapper">
+                <div class="featured-icon">
+                    <i class="fa fa-battery-full"></i>
+                </div>
+                <div class="featured-text">
+                    <h3>Quality Assurance</h3>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <iframe id="video" width= "560" height="315" src="https://www.youtube.com/embed/ffGjmz0jzWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </section>
+
+        <section id="pricing">
+            <div class="container pricing-wrapper">
+                <div class="pricing-box">
+                    <h4>Acoustic Guitar</h4>
+                    <p class="price">$600</p>
+                    <p>lorem ipsum</p>
+                    <p>lorem ipsum dolor</p>
+                    <p>lorem ipsum</p>
+                    <a href="" class="btn">Select</a>
+                </div>
+
+                <div class="pricing-box">
+                    <h4>Electric Guitar</h4>
+                    <p class="price">$800</p>
+                    <p>lorem ipsum</p>
+                    <p>lorem ipsum dolor</p>
+                    <p>lorem ipsum</p>
+                    <a href="" class="btn">Select</a>
+                </div>
+
+                <div class="pricing-box">
+                    <h4>Concert Guitar</h4>
+                    <p class="price">$900</p>
+                    <p>lorem ipsum</p>
+                    <p>lorem ipsum dolor</p>
+                    <p>lorem ipsum</p>
+                    <a href="" class="btn">Select</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <span>Copyright 2022, Top Quality Guitars</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<!-- nav bar lock -->
+<script>
+    window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("header");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky")
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</html>
